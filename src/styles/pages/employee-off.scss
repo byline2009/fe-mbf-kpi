@@ -1,0 +1,14 @@
+.employee-off {
+  .title {
+    font-size: $headline-2;
+    line-height: $headline-2;
+    margin-top: 24px;
+  }
+  .empty-content {
+    min-height: 600px;
+    height: 600px;
+  }
+  .table-responsive {
+    min-height: 600px;
+  }
+}

@@ -1,0 +1,72 @@
+.thaysim {
+  .title {
+    font-size: $headline-2;
+    line-height: $headline-2;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-size: $body;
+    line-height: $body;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .empty-content {
+    min-height: 550px;
+    height: 550px;
+  }
+  .table-responsive {
+    min-height: 550px;
+    height: 550px;
+  }
+  .filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: fit-content;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
+    .filter-body {
+      padding: 8px;
+      width: auto;
+      height: 100%;
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+      }
+
+      .select-filter {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        label {
+          width: 80px;
+          max-width: 80px;
+        }
+        select {
+          width: 200px;
+          max-width: 200px;
+        }
+      }
+      .select-filter + .select-filter {
+        margin-left: 24px;
+        @media (max-width: 767px) {
+          margin-left: 0px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
