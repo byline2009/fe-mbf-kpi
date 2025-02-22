@@ -27,7 +27,7 @@ const PrivateRoutes = () => {
         <Route path="auth/*" element={<Navigate to="/dashboard-business" />} />
         {/* Pages */}
         <Route
-          path="dashboard"
+          path="dashboard-business"
           element={
             <ErrorBoundary fallback={<div>Something went wrong</div>}>
               <SuspensedView>

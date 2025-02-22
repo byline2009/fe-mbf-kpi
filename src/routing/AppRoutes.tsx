@@ -16,14 +16,14 @@ const { REACT_APP_PUBLIC_URL } = process.env;
 
 const AppRoutes = () => {
   const isAuthorized =
-    useSelector < RootState > (({ auth }) => auth.user, shallowEqual);
+    useSelector<RootState>(({ auth }) => auth.user, shallowEqual);
   return (
     <BrowserRouter basename={REACT_APP_PUBLIC_URL}>
       <Routes>
         <Route element={<App />}>
           <Route path="error/*" element={<ErrorsPage />} />
           <Route path="logout" element={<Logout />} />
-          {isAuthorized ? (
+          {!isAuthorized ? (
             <>
               <Route path="/*" element={<PrivateRoutes />} />
               <Route index element={<Navigate to="/dashboard" />} />
