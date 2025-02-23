@@ -81,22 +81,33 @@
   .full-height-content {
     min-height: 100vh;
   }
-  th:first-child,
-  td:first-child {
-    position: sticky;
-    left: 0px;
-  }
-  thead {
-    position: sticky;
-    top: 0;
-    left: 0px;
-    z-index: 100;
-  }
+  // th:first-child,
+  // td:first-child {
+  //   position: sticky;
+  //   left: 0px;
+  // }
+  // th:nth-child(2),
+  // td:nth-child(2) {
+  //   position: sticky;
+  //   left: 50px;
+  // }
+  // thead {
+  //   position: sticky;
+  //   top: 0;
+  //   left: 0px;
+  //   z-index: 100;
+  // }
   .table-responsive {
     height: 500px;
     // &.isSticky {
     //   position: fixed;
     //   top: 200px;
     // }
+    thead {
+      top: 0;
+      position: sticky;
+      z-index: 1;
+    }
+   
   }
 }

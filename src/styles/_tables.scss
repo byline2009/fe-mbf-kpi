@@ -77,10 +77,15 @@
     tr {
       border-bottom-width: 1px;
       border-bottom-style: solid;
-      border-bottom-color: $border-color;
+      border-bottom-color: #2e2320;
     }
     thead {
       border-bottom-color: 0px solid transparent !important;
+      th {
+        background-color: #fbcb8d;
+        font-weight: 600;
+        border-color: #3e3735;
+      }
     }
 
     tfoot {
@@ -108,7 +113,7 @@
         border-bottom-style: solid;
         border-bottom-color: $border-color;
         th {
-          background-color: $primary;
+          background-color: #fbcb8d;
           color: white;
         }
       }
@@ -188,6 +193,53 @@
           }
         }
       }
+    }
+  }
+  .table-dashboard {
+    tr {
+      td {
+        border: thin solid;
+        border-color: #948481;
+      }
+
+      th:first-child {
+        padding-left: 5px !important;
+      }
+    }
+    thead {
+      tr {
+        th {
+          background-color: #fbcb8d;
+          color: white;
+          border: thin solid;
+          border-color: #948481;
+          border-bottom: thin solid;
+        }
+      }
+    }
+    th:first-child,
+    td:first-child {
+      position: sticky;
+      left: 0px;
+    }
+    td:first-child {
+      width: 100px !important;
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+      position: sticky;
+      left: 50px;
+    }
+    thead {
+      position: sticky;
+      top: 0;
+      left: 0px;
+      z-index: 100;
+      background-color: #fbcb8d;
+    }
+    .sticky-two-column {
+      position: sticky;
+      left: 130px !important;
     }
   }
 }
